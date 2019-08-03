@@ -1,0 +1,22 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1px 0;
+    height: 70px;
+    align-items: center;
+    color: #fff;
+    border-bottom: #fff 1px solid;
+}
+
+.Logo{
+    height: 75%;
+}
+.Logo > img {
+    height: 100%;
+}
+.LoginSignup {
+    display: flex;
+    width: 250px;
+}
