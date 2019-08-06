@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomeHeader.css';
 import logo from '../assets/greentrustwhite.png';
-import LoginSignupBtn from './LoginSignupBtn';
+import Button from './Button';
 
 const header = props => {
     return (
@@ -13,8 +13,8 @@ const header = props => {
                 PERSONAL
             </div>
             <div className="LoginSignup">
-                <LoginSignupBtn title="Log In" color="white" />
-                <LoginSignupBtn title="Sign Up" />
+                <Button title="Log In" color="white" />
+                <Button title="Sign Up" />
             </div>
         </div>
     )

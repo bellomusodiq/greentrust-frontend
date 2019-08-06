@@ -1,0 +1,28 @@
+.LeftRightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.LeftRight h4{
+    font-size: 1.8em;
+    color: #007F00;
+}
+.LeftRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.LeftRight > div {
+    width: 45%;
+}
+.Process {
+    width: 50%;
+    margin: 0% auto;
+    margin-bottom: -160px;
+}
+.Steps {
+    color: #007F00;
+    font-size: 3.5em;
+    margin-bottom: -5px;
+}

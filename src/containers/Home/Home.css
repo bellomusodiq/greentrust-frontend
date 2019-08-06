@@ -1,0 +1,70 @@
+.GetStarted {
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    font-size: 1.9em;
+    border-radius: 45px;
+}
+.GetStarted2 {
+    height: 70px;
+    width: 300px;
+    font-size: 1.9em;
+    border-radius: 45px;
+}
+.Sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 80%;
+    margin: 0% auto;
+}
+.Sponsors > img {
+    box-sizing: content-box;
+}
+.PoweredBy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.PoweredBy > img{
+    width: 80%;
+}
+.PoweredBy > h3{
+    margin-top: -110px;
+    font-size: 5.5em;
+    color: #007F00;
+}
+.PoweredByBtn{
+    height: 70px;
+    width: 300px;
+    font-size: 1.9em;
+    border-radius: 45px;
+}
+.Now{
+    background: linear-gradient(to right, #015c01, rgb(4, 177, 4));
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+}
+.Contact{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0% auto;
+}
+.Contact > div{
+    margin-right: 20px;
+    text-align: start;
+}
+.Contact h4 {
+    font-size: 1.4em;
+}
+.Contact a {
+    color: black;
+    text-decoration: none;
+}

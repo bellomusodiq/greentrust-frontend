@@ -3,19 +3,19 @@ import './LoginSignupBtn.css';
 
 const btn = props => {
     let btnProps = {
-        backgroundColor: "#3FAF3F",
+        backgroundColor: "#007F00",
         color: "#f1f1f1",
-        borderColor: "#3FAF3F",
+        borderColor: "#007F00",
     };
     if (props.color === "white") {
         btnProps = {
             backgroundColor: "#f1f1f1",
-            color: "#3FAF3F",  
+            color: "#007F00",  
             borderColor: "#F1F1F1",
         };
     }
     return (
-        <button className="LoginSignupBtn" style={btnProps}>
+        <button className={props.className?"LoginSignupBtn "+props.className:"LoginSignupBtn"} style={btnProps}>
             {props.title}
         </button>
     )
