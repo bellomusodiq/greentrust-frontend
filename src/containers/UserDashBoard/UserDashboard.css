@@ -1,0 +1,154 @@
+.Dashboard {
+    box-sizing: border-box;
+}
+.DashboardSidenav {
+    position: fixed;
+    width: 20%;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    background-color: #007F00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.DashboardSidenav > a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.DashboardSidenav > a:hover{
+    background: rgb(6, 165, 6);
+    box-sizing: border-box;
+}
+.DashBoardMain{
+    width: 80%;
+    margin-left: 20%;
+    box-sizing: border-box;
+}
+.DashbaordHeader {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgb(204, 202, 202);
+    border: none;
+    width: 100%;
+    padding: 7px 0;
+    /* align-items: center; */
+}
+.DashboardSearch {
+    width: 45%;
+    display: flex;
+    padding-left: 10px;
+}
+.DashboardSearch > input {
+    width: 80%;
+    /* height: 100%; */
+}
+.DashboardBalance{
+    width: 20%;
+}
+.RevenuePayments{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.Revenue, .Pending {
+    background: linear-gradient(rgb(5, 173, 5), #016601);
+    margin: 0 50px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.revenue-heading {
+    font-size: .8em;
+}
+.revenue-amount {
+    font-weight: bolder;
+}
+.last-revenue {
+    font-size: .6em;
+}
+.pending-heading {
+    font-size: .8em;
+}
+.pending-amount{
+font-weight: bolder;
+}
+.NotificationsMessages {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0% auto;
+    height: 50px;
+    /* align-items: center; */
+    font-size: 1.2em;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+.NotificationsMessages > div {
+    width: 20%;
+}
+.Underline{
+    width: 100%;
+    height: 3px;
+    background: #007F00;
+    margin-top: -5px;
+}
+.NotificationTable {
+    width: 70%;
+    margin: 0% auto;
+    margin-top: 10px;
+}
+.NotificationRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.pimg {
+    height: 50px;
+    width: 50px;
+}
+.NotificationDesc {
+    width: calc(80% - 60px);
+    text-align: left;
+}
+.NotificationDesc > p {
+    font-weight: bold;
+    margin: -1.5px 0;
+    color: #007F00;
+}
+.AcceptReject {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+button.Accept {
+    border: 1px solid #007F00;
+    color: #007F00;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px 20px;
+    width: 40%;
+}
+button.Reject {
+    border: 1px solid #DD4B39;
+    color: #DD4B39;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0px 10px;
+    width: 40%;
+}
