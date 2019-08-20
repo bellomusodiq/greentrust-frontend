@@ -1,0 +1,35 @@
+.TrustForm {
+    width: 40%;
+    margin: 0% auto;
+}
+.IamBuying {
+    display: flex;
+    justify-content: center;
+}
+.IamBuying > * {
+    margin: 0 10px;
+    padding: 5px 30px;
+    /* color: white; */
+}
+.Iam {
+    background: #007F00;
+    color: white;
+}
+.IamBuying select {
+    outline: #007F00 2px solid;
+    color: #007F00;
+}
+.ItemName {
+    display: flex;
+    justify-content: center;
+}
+.ItemName > * {
+    padding: 5px 10px;
+    outline: #007F00 1px solid;
+}
+.Amount {
+    width: 100px;
+}
+.CreateTrust > h1 {
+    color: #007F00;
+}

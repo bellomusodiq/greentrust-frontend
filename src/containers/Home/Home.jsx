@@ -9,9 +9,23 @@ import Greentrust from '../../assets/greentrustcompo.png';
 import Button from '../../components/Button';
 import LeftRightContainer from '../../components/LeftRightContainer';
 import './Home.css';
+import axios from 'axios';
 
 class Home extends Component {
-
+    state = {
+        data: null
+    }
+    componentDidMount() {
+        axios.get('http://localhost:8000/api/revenue/')
+        .then(res => {
+            this.setState({data: res.data})
+            console.log(res)
+        })
+        axios.get('http://localhost:8000/api/users/')
+        .then(res => console.log(res))
+        axios.get('http://localhost:8000/api/witdrawal/')
+        .then(res => console.log(res))
+    }
     render() {
         return (
             <Fragment>

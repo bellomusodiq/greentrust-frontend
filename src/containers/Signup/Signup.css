@@ -1,0 +1,73 @@
+.Signup{
+    background: #007F00;
+    height: 100vh;
+    padding-top: 3%;
+}
+.Signupform {
+    width: 25%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.Signupform > .Username {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: rgb(80, 80, 80);
+}
+.Signupform > h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #007F00;
+    text-decoration: underline;
+}
+.Password {
+    width: 100%;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    color: rgb(80, 80, 80);
+    padding: 5px 30px 5px 10px;
+}
+.ShowPassword {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 8px;
+}
+.ForgetPassword {
+    text-decoration: underline;
+    color: #007F00;
+    text-align: right!important;
+    margin: 20px 0!important;
+    display: flex;
+    justify-content: flex-end;
+}
+.ForgetPassword:active, .ForgetPassword::after, .ForgetPassword:visited {
+    color: #007F00;
+}
+.Signupform input {
+    outline: #007F00 solid 1px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    margin-top: 5px;
+    /* border: #007F00; */
+}
+.SignupSubmit {
+    margin: 0% auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.SignupSubmit > button {
+    padding: 15px 60px;
+    font-size: 1.7em;
+    color: white;
+    background: #007F00;
+    border: none;
+    border-radius: 10px;
+}

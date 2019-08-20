@@ -16,3 +16,9 @@
 button{
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
+a:active, a::after, a:visited {
+  color: inherit;
+}

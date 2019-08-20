@@ -4,6 +4,7 @@ import './UserDashboard.css';
 import SideNav from './SideNav';
 import Header from './DashBoardHeader';
 import DashBoardMain from './DashBoardMain';
+import DashBoardTransaction from './DashboardTransaction';
 
 class UserDashboard extends Component {
 
@@ -14,6 +15,7 @@ class UserDashboard extends Component {
                 <div className="DashBoardMain">
                     <Header />
                     <Switch>
+                        <Route path="/dashboard/transactions" component={DashBoardTransaction} />
                         <Route path="/dashboard" component={DashBoardMain} />
                     </Switch>
                 </div>

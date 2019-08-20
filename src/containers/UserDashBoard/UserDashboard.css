@@ -1,6 +1,27 @@
 .Dashboard {
     box-sizing: border-box;
 }
+.Dbnav > img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.Dbnav {
+    box-sizing: border-box;
+}
+.DashbaordHeader {
+    align-items: center;
+}
+.pimg {
+    margin: 0 5px;
+}
+.pimg > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 .DashboardSidenav {
     position: fixed;
     width: 20%;
@@ -26,6 +47,15 @@
     background: rgb(6, 165, 6);
     box-sizing: border-box;
 }
+.SideNavHeader {
+    border:1px solid white;
+    width: 95%;
+    margin: 0% auto;
+}
+.SideNavHeader > h3 {
+    font-size: 2em;
+    margin: -5px;
+}
 .DashBoardMain{
     width: 80%;
     margin-left: 20%;
@@ -46,6 +76,16 @@
     width: 45%;
     display: flex;
     padding-left: 10px;
+    align-items: center;
+    
+}
+.DashboardSearch > input {
+    padding: 5px 5px 5px 30px;
+}
+.DashboardSearch > i {
+    /* position: relative; */
+    color: red!important;
+    margin-right: -50px!important;
 }
 .DashboardSearch > input {
     width: 80%;
@@ -53,6 +93,7 @@
 }
 .DashboardBalance{
     width: 20%;
+    color: #007F00;
 }
 .RevenuePayments{
     display: flex;
@@ -71,6 +112,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.DashbaordHeader
 .revenue-heading {
     font-size: .8em;
 }
@@ -151,4 +193,99 @@ button.Reject {
     background: #fff;
     padding: 0px 10px;
     width: 40%;
+}
+.notificationRow {
+    margin: 5px 0;
+    box-shadow: 1px 1px 1px lightgray;
+    cursor: pointer;
+}
+.notificationRow:hover {
+    box-shadow: 3px 3px 5px lightgray;
+}
+.TransactionRow {
+    display: grid;
+    margin: 0% auto;
+    grid-template-columns: 5% 25% 35% 15% 20%;
+    grid-column-gap: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.Heading {
+    color: #007F00;
+    font-weight: bold;
+}
+.SN {
+    color: #007F00;
+}
+.TransactionTable {
+    border: 1.5px solid #007F00;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0% auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+.DashboardTransaction {
+    width: 95%;
+    margin: 0% auto;
+}
+
+.TransactionLogTable {
+    border: 1.5px solid lightgrey;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px rgb(241, 241, 241);
+}
+.TransactionLogHeader {
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Divider {
+    width: 100%;
+    height: 1.5px;
+    background: lightgray;
+}
+.TrasactionLogHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.TrasactionLogHeader > h3 {
+    color: #007F00;
+    font-weight: bold;
+}
+.csvButton {
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px lightgray;
+}
+.TransactionLogHeading {
+    display: grid;
+    grid-template-columns: 5% 20% 40% 10% 10% 15%;
+    grid-column-gap: 5px;
+    text-align: left;
+    padding: 0 20px;
+}
+.TransactionLogHeading > h4 {
+    font-size: .9em;
+}
+.TransactionLogRow {
+    display: grid;
+    grid-template-columns: 5% 20% 40% 10% 10% 15%;
+    grid-column-gap: 5px;
+    text-align: left;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+.SeeFull {
+    display: flex;
+    justify-content: flex-end;
+}
+.SeeFull > a {
+    background: #fff;
+    border: 2px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: rgb(0, 119, 255);
 }

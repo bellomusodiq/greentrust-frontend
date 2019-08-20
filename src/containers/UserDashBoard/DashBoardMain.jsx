@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Link } from "react-router-dom";
+import ProfileImage from "../../assets/p_image.jpg";
 
 class DashBoardMain extends Component {
     state = {
@@ -10,7 +12,7 @@ class DashBoardMain extends Component {
             currentTab = (
                 <div className="NotificationTable">
                     <div style={{background: 'rgb(236, 236, 236)'}} className="NotificationRow">
-                        <div className="pimg">pimg</div>
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
                         <div className="NotificationDesc">
                             <p>Ajanaku sent you an order</p>
                             <p>2d</p>
@@ -21,7 +23,7 @@ class DashBoardMain extends Component {
                         </div>
                     </div>
                     <div className="NotificationRow">
-                        <div className="pimg">pimg</div>
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
                         <div className="NotificationDesc">
                             <p>Ajanaku sent you an order</p>
                             <p>2d</p>
@@ -32,7 +34,7 @@ class DashBoardMain extends Component {
                         </div>
                     </div>
                     <div style={{background: 'rgb(236, 236, 236)'}} className="NotificationRow">
-                        <div className="pimg">pimg</div>
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
                         <div className="NotificationDesc">
                             <p>Ajanaku sent you an order</p>
                             <p>2d</p>
@@ -47,15 +49,100 @@ class DashBoardMain extends Component {
         }
         if (this.state.current === "Messages") {
             currentTab = (
-                <div className="MessagesTable">
-                    Messages Table here
+                <div className="NotificationTable">
+                    <div style={{background: 'rgb(236, 236, 236)'}} className="NotificationRow notificationRow">
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
+                        <div className="">
+                            <p>Bello Mayowa</p>
+                        </div>
+                        <div className="AcceptReject">
+                            <p>I want to make an enquiry on your ...</p>
+                        </div>
+                        <div style={{marginRight: 10}}>
+                            <p>12/06/20</p>
+                        </div>
+                    </div>
+                    <div className="NotificationRow notificationRow">
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
+                        <div className="">
+                            <p>Bello Mayowa</p>
+                        </div>
+                        <div className="AcceptReject">
+                            <p>I want to make an enquiry on your ...</p>
+                        </div>
+                        <div style={{marginRight: 10}}>
+                            <p>12/06/20</p>
+                        </div>
+                    </div>
+                    <div style={{background: 'rgb(236, 236, 236)'}} className="NotificationRow notificationRow">
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
+                        <div className="">
+                            <p>Bello Mayowa</p>
+                        </div>
+                        <div className="AcceptReject">
+                            <p>I want to make an enquiry on your ...</p>
+                        </div>
+                        <div style={{marginRight: 10}}>
+                            <p>12/06/20</p>
+                        </div>
+                    </div>
+                    <div className="NotificationRow notificationRow">
+                        <div className="pimg"><img src={ProfileImage} alt="Profile Image" /></div>
+                        <div className="">
+                            <p>Bello Mayowa</p>
+                        </div>
+                        <div className="AcceptReject">
+                            <p>I want to make an enquiry on your ...</p>
+                        </div>
+                        <div style={{marginRight: 10}}>
+                            <p>12/06/20</p>
+                        </div>
+                    </div>
                 </div>
             )
         }
         if (this.state.current === "Transaction") {
             currentTab = (
                 <div className="TransactionTable">
-                    Transaction Table here
+                    <div className="TransactionRow">
+                        <div className="Heading">SN</div>
+                        <div className="Heading">Transaction Id</div>
+                        <div className="Heading">Details</div>
+                        <div className="Heading">Amount</div>
+                        <div className="Heading">Time</div>
+                    </div>
+                    <br/>
+                    <div className="TransactionRow">
+                        <div className="SN">1</div>
+                        <div className="TransactionId" style={{color: "red"}}>TXFG2351afFereaDWEIR343</div>
+                        <div className="TransactionDetails" style={{color: 'red'}}>Withdrawal via bank deposit</div>
+                        <div className="TransactionAmount" style={{color: 'red'}}>1000 NGN</div>
+                        <div className="TransactionTime" style={{color: 'red'}}>15 Jul, 2019 12:03 AM</div>
+                    </div>
+                    <div className="TransactionRow">
+                        <div className="SN">2</div>
+                        <div className="TransactionId" style={{color: "#007F00"}}>TXFG2351afFereaDWEIR343</div>
+                        <div className="TransactionDetails" style={{color: "#007F00"}}>Trust amount released from Ajanaku</div>
+                        <div className="TransactionAmount" style={{color: "#007F00"}}>1000 NGN</div>
+                        <div className="TransactionTime" style={{color: "#007F00"}}>15 Jul, 2019 12:03 AM</div>
+                    </div>
+                    <div className="TransactionRow">
+                        <div className="SN">3</div>
+                        <div className="TransactionId" style={{color: 'red'}}>TXFG2351afFereaDWEIR343</div>
+                        <div className="TransactionDetails" style={{color: 'red'}}>Withdrawal via bank deposit</div>
+                        <div className="TransactionAmount" style={{color: 'red'}}>1000 NGN</div>
+                        <div className="TransactionTime" style={{color: 'red'}}>15 Jul, 2019 12:03 AM</div>
+                    </div>
+                    <div className="TransactionRow">
+                        <div className="SN">4</div>
+                        <div className="TransactionId" style={{color: "#007F00"}}>TXFG2351afFereaDWEIR343</div>
+                        <div className="TransactionDetails" style={{color: "#007F00"}}>Trust amount released from Ajanaku</div>
+                        <div className="TransactionAmount" style={{color: "#007F00"}}>1000 NGN</div>
+                        <div className="TransactionTime" style={{color: "#007F00"}}>15 Jul, 2019 12:03 AM</div>
+                    </div>
+                    <div className="SeeFull">
+                        <Link to="/dashboard/transactions">See full</Link>
+                    </div>
                 </div>
             )
         }
