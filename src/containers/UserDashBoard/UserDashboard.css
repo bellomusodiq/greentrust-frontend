@@ -289,3 +289,155 @@ button.Reject {
     padding: 5px 10px;
     color: rgb(0, 119, 255);
 }
+.AddMoneytoWallet > h3 {
+    color: #007F00;
+}
+.AddMoneytoWallet {
+    margin: 0% auto;
+    width: 100%;
+}
+.AddMoneytoWallet > form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.AddMoneytoWallet > form > input {
+    padding: 5px 10px;
+    outline: #007F00 1px solid;
+    width: 00px;
+}
+.AddmoneyBtn {
+    width: 150px;
+}
+@media only screen and (max-width: 1025px) {
+    .SideNavHeader > h3 {
+        font-size: 1.2em;
+    }
+    .DashboardSidenav > a {
+        font-size: 1em;
+    }
+    .DashboardBalance {
+        font-size: .8em;
+        display: none;
+    }
+    .DashboardMain > * {
+        width: 95%;
+    }
+    .NotificationsMessages > div > span {
+        font-size: .8em;
+    }
+    .AcceptReject > button {
+        padding: 5px 10px;
+    }
+    .TransactionRow > div {
+        font-size: 0.6em;
+    }
+    .TransactionLogTable{
+        padding-right: 10px;
+    }
+    .TransactionLogTable > div > div {
+        font-size: .7em;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .TransactionLogTable > div > div {
+        font-size: .45em;
+    }
+    .TransactionLogHeading > h4 {
+        font-size: .7em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .TransactionLogTable > div > div {
+        font-size: .1em;
+    }
+    .TransactionLogHeading > h4 {
+        font-size: .5em;
+    }
+    .SideNavHeader > h3 {
+        font-size: 1em;
+    }
+    .DashboardSidenav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        z-index: 20;
+        transform: translateX(-100vw)
+    }
+    .DM {
+        width: 100%;
+        margin-left: 0;
+    }
+    .RevenuePayments {
+        margin-top: 20px;
+    }
+    .revenue-heading, .pending-heading {
+        font-size: .7em;
+    }
+    .revenue-amount, .pending-amount {
+        font-size: .5em;
+    }
+    .Revenue, .Pending {
+        width: 45%;
+        margin: 0 10px;
+    }
+    .DashboardSidenav > a {
+        font-size: 1em;
+    }
+    .DashboardBalance {
+        font-size: .8em;
+        display: none;
+    }
+    .DashboardMain > * {
+        width: 95%;
+    }
+    .NotificationRow {
+        height: 50px;
+    }
+    .NotificationsMessages > div {
+        width: 40%;
+    }
+    .NotificationsMessages > div > span {
+        font-size: .5em;
+    }
+    .pimg {
+        display: flex;
+        align-items: center;
+    }
+    .pimg > img {
+        width: 40px;
+        height: 40px;
+    }
+    .hiddenSmall {
+        display: none;
+    }
+    .TransactionTable {
+        box-sizing: border-box;
+    }
+    .AcceptReject > button {
+        font-size: .5em;
+        padding: 5px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .NotificationDesc > p {
+        font-size: .7em;
+    }
+    .TransactionRow > div {
+        font-size: 0.35em;
+    }
+    .SeeFull {
+    }
+    .DashboardSearch {
+        width: 75%;
+    }
+
+    .NotificationRow p {
+        font-size: .7em;
+    }
+}

@@ -16,16 +16,9 @@ class Home extends Component {
         data: null
     }
     componentDidMount() {
-        axios.get('http://localhost:8000/api/revenue/')
-        .then(res => {
-            this.setState({data: res.data})
-            console.log(res)
-        })
-        axios.get('http://localhost:8000/api/users/')
-        .then(res => console.log(res))
-        axios.get('http://localhost:8000/api/witdrawal/')
-        .then(res => console.log(res))
+        
     }
+    
     render() {
         return (
             <Fragment>

@@ -1,8 +1,18 @@
+import { UPDATE_DATA } from "./actionTypes";
+
 const initialState = {
-    "hello": "world"
+    messages: []
 }
 
 const reducer = (state=initialState, action) => {
+    switch (action.type){
+        case UPDATE_DATA:
+            return {
+                ...state,
+                messages: action.payload
+            }
+            break;
+    }
     return state;
 }
 

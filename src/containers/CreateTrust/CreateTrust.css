@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
 }
-.ItemName > * {
+.ItemName > *, .FinalDetail {
     padding: 5px 10px;
     outline: #007F00 1px solid;
 }
@@ -32,4 +32,7 @@
 }
 .CreateTrust > h1 {
     color: #007F00;
+}
+.FinalDetail {
+    width: 300px;
 }

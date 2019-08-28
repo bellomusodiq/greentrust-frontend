@@ -151,12 +151,12 @@ class DashBoardMain extends Component {
                 <div className="RevenuePayments">
                     <div className="Revenue">
                         <p className="revenue-heading">REVENUE</p>
-                        <p className="revenue-amount">NGN 10,000</p>
+                        <p className="revenue-amount">NGN {this.props.user?this.props.user.revenue:"0.00"}</p>
                         <p className="last-revenue">Yesterday: NGN 8,500</p>
                     </div>
                     <div className="Pending">
                         <p className="pending-heading">PENDING PAYMENTS</p>
-                        <p className="pending-amount">NGN 81,345</p>
+                        <p className="pending-amount">NGN {this.props.user?this.props.user.pending_payments:"0.00"}</p>
                     </div>
                 </div>
                 <div className="NotificationsMessages">
